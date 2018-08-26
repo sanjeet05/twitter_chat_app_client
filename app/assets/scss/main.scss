@@ -1,0 +1,74 @@
+$color: #262828;
+$bg_color: #f7f7f7;
+$bg_color_1: #ECF0F5;
+
+body {
+  color: $color;
+  background: $bg_color_1 !important;
+}
+
+.top_navbar{
+  background-color: #fff !important;
+  border-bottom: 1px solid #e5e5e5;
+  position: fixed;
+  top: 0px;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+.top_logo_name{
+  color: #F37623 !important;
+  font-weight: 700;
+}
+
+.main_container{   
+  padding-top: 65px; 
+}
+
+// for pagination
+.pagination > li:first-child > a, .pagination > li:first-child > span {
+  margin-left: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.pagination > li > a, .pagination > li > span {
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  margin-left: -1px;
+  line-height: 1.42857143;
+  color: #337ab7;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.pagination > .active > a, .pagination > .active > a:focus, .pagination > .active > a:hover, .pagination > .active > span, .pagination > .active > span:focus, .pagination > .active > span:hover {
+  z-index: 3;
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #337ab7;
+  cursor: default;
+}
+
+.pagination > .disabled > a, .pagination > .disabled > a:focus, .pagination > .disabled > a:hover, .pagination > .disabled > span, .pagination > .disabled > span:focus, .pagination > .disabled > span:hover {
+  color: #777;
+  background-color: #fff;
+  border-color: #ddd;
+  cursor: not-allowed;
+}
+
+// for common
+.hidden{
+  display: none;
+}
+
+.divider {
+  margin-left: -10px !important;
+  margin-right: -10px !important;
+  margin-bottom: 5px;
+  height: 1px;
+  border: medium none;
+  background-color: rgb(224, 224, 224);
+}
